@@ -67,6 +67,7 @@ const App = () => {
                 {pokemonEvolutions.map((pokemon) => (
                     <Card key={pokemon[0]} name={pokemon[0]} img={pokemon[1]} />
                 ))}
+                <h1 className="prueba">ESTE TEXTO ES DE PRUEBA</h1>
             </div>
             <div className="buttons-container">
                 <Button icon={<TiArrowLeftOutline />} handleClick={prevClick} />

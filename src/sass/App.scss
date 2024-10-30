@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .app {
     display: flex;
     flex-direction: column;
@@ -54,4 +56,23 @@
 
 .card2 {
     transform: rotate(4deg) translate(70px);
+}
+
+.prueba {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-top: 50vh;
+    padding: 10px;
+    background-color: lightyellow;
+    text-align: center;
+    color: blue; /* Color inicial del texto y del borde */
+    -webkit-text-stroke: 1px blue; /* Borde fino con el mismo color del texto */
+
+    /* Efecto al pasar el ratón */
+    transition: color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+
+    &:hover {
+        color: v.$color3; /* Color del texto al pasar el ratón */
+        -webkit-text-stroke-color: blue; /* Borde se mantiene azul */
+    }
 }
